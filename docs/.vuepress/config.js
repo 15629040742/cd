@@ -10,7 +10,7 @@
 // 为了更好的理解，以下所有配置，注释，须配合查看页面实际效果！
 
 module.exports = {
-    title: 'shotCat_doc', //标题
+    title: 'shotyh_doc', //标题
     description: '开箱即用的组件库文档', //描述
     base: '/', //基本url
     // 注入到当前页面的 HTML <head> 中的标签
@@ -30,15 +30,15 @@ module.exports = {
             text: '文档',
             // 这里是下拉列表展现形式。
             items: [
-              { text: '2.0.0', link: '/components/2.0/catButton' },
+              { text: '2.0.0', link: '/components/2.0/yhButton' },
               { text: '1.0.0',link: '/components/1.0/'},
             ]
           },
           {
             text: '关于作者',
             items: [
-              { text: 'GitHub地址', link: 'https://github.com/1011cat' }, //外部链接
-              { text: '个人博客',link: 'http://shotcat.com'},
+              { text: 'GitHub地址', link: 'https://github.com/1011yh' }, //外部链接
+              { text: '个人博客',link: 'http://shotyh.com'},
               { text: '掘金账号',link: 'https://juejin.im/user/59b7940d5188257e82675bc0'}
             ]
           }        
@@ -49,14 +49,47 @@ module.exports = {
           '/components/2.0/':[
             {
               title: '基础组件',   // 必要的
-              path: '', //如果你不想'基础组件'可点击并有对应说明，就直接设为空，或者不写,并且nav的link也不要指向 '/components/2.0/'而是'/components/2.0/catButton' 
+              path: '', //如果你不想'基础组件'可点击并有对应说明，就直接设为空，或者不写,并且nav的link也不要指向 '/components/2.0/'而是'/components/2.0/yhButton' 
               collapsable: false, // 可选的, 右侧侧边栏是否展开,默认值是 true
               // 如果组件很多时，建议将children配置单独放到一个js文件中，然后进行引入
               children: [
                 {
                   title:'Button 按钮',
-                  path: 'catButton',
+                  path: 'yhButton',
+                },
+                {
+                  title:'icon 图标',
+                  path: 'yhIcon'
+                },
+                {
+                  title:'calendar 日历',
+                  path: 'yhCalendar',
+                },
+                {
+                  title:'dialog 对话框',
+                  path: 'yhDialog',
+                },
+                {
+                  title:'switch 开关',
+                  path: 'yhSwitch',
+                },
+                {
+                  title:'input 输入框',
+                  path: 'yhInput',
+                },
+                {
+                  title:'radio 单选框',
+                  path: 'yhRadio',
+                },
+                {
+                  title:'checkbox 复选框',
+                  path: 'yhCheckbox',
+                },
+                {
+                  title:'form 表单',
+                  path: 'yhForm',
                 }
+
               ]
             },
             {
@@ -72,7 +105,7 @@ module.exports = {
               children: [
                 {
                   title:'Button 按钮',
-                  path: 'catButton'
+                  path: 'yhButton'
                 }
               ]
             }
@@ -122,7 +155,7 @@ module.exports = {
         platform: 'github',
 
         // owner与repo配置 https://github.com/${owner}/${repo}
-        // 例如我的仓库地址为https://github.com/1011cat/shotCat_doc 则owner为1011cat，repo为shotCat_doc
+        // 例如我的仓库地址为https://github.com/1011yh/shotyh_doc 则owner为1011yh，repo为shotyh_doc
         owner: 'your owner',
         repo: 'your repo',
 

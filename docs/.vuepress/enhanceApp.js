@@ -8,7 +8,7 @@ import VueHighlightJS from 'vue-highlight.js';
 import 'highlight.js/styles/atom-one-light.css';
 
 //引入自己的组件库
-import Cat from '../../src/index'
+import yh from '../../src/index'
 
 //你可以在这里引入自己定义的css样式，进行修改
 // import '../.vuepress/public/css/index.css'
@@ -24,5 +24,5 @@ export default ({
 }) => {
   // ...做一些其他的应用级别的优化
   Vue.use(VueHighlightJS)
-  Vue.use(Cat)
+  Vue.use(yh)
 }
